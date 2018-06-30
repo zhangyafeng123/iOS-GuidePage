@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "ZYFFeatureViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,10 +16,38 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    /** 根控制器 **/
+    [self setUpRootVC];
+    [self.window makeKeyAndVisible];
+    [self setUpFixiOS11];
     return YES;
 }
-
+- (void)setUpRootVC
+{
+    ZYFFeatureViewController *zyf = [[ZYFFeatureViewController alloc] init];
+    /**
+     [zyf setUpFeatureAttribute:^(NSArray *__autoreleasing *imageArray, UIColor *__autoreleasing *selColor, BOOL *showSkip, BOOL *showPageCount) {
+     *imageArray = @[@"guide1",@"guide2",@"guide3",@"guide4"];
+     *showPageCount = YES;
+     *showSkip = YES;
+     }];
+     
+     **/
+    [zyf setupFeatureAttributeNewMethod:@[@"guide1",@"guide2",@"guide3",@"guide4"] color:[UIColor redColor] isShowSkip:YES isShowPageCount:YES];
+    self.window.rootViewController = zyf;
+}
+#pragma mark - 适配
+- (void)setUpFixiOS11
+{
+    if (@available(ios 11.0,*)) {
+        UIScrollView.appearance.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+        UITableView.appearance.estimatedRowHeight = 0;
+        UITableView.appearance.estimatedSectionFooterHeight = 0;
+        UITableView.appearance.estimatedSectionHeaderHeight = 0;
+    } 
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

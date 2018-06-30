@@ -15,6 +15,9 @@
 		9CA2E4FF20E77EDB00AE25C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA2E4FE20E77EDB00AE25C7 /* main.m */; };
 		9CA2E50920E77EDB00AE25C7 /* ______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA2E50820E77EDB00AE25C7 /* ______Tests.m */; };
 		9CA2E51420E77EDB00AE25C7 /* ______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA2E51320E77EDB00AE25C7 /* ______UITests.m */; };
+		9CA2E52320E77F1200AE25C7 /* ZYFFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA2E52220E77F1200AE25C7 /* ZYFFeatureViewController.m */; };
+		9CA2E52620E7800200AE25C7 /* ZYFFeatureCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA2E52520E7800200AE25C7 /* ZYFFeatureCell.m */; };
+		9CA2E54B20E7B89100AE25C7 /* ZYFBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA2E54A20E7B89100AE25C7 /* ZYFBlockViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		9CA2E50F20E77EDB00AE25C7 /* 广告页自定义UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "广告页自定义UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CA2E51320E77EDB00AE25C7 /* ______UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "______UITests.m"; sourceTree = "<group>"; };
 		9CA2E51520E77EDB00AE25C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CA2E52120E77F1200AE25C7 /* ZYFFeatureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYFFeatureViewController.h; sourceTree = "<group>"; };
+		9CA2E52220E77F1200AE25C7 /* ZYFFeatureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYFFeatureViewController.m; sourceTree = "<group>"; };
+		9CA2E52420E7800200AE25C7 /* ZYFFeatureCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYFFeatureCell.h; sourceTree = "<group>"; };
+		9CA2E52520E7800200AE25C7 /* ZYFFeatureCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYFFeatureCell.m; sourceTree = "<group>"; };
+		9CA2E54920E7B89100AE25C7 /* ZYFBlockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYFBlockViewController.h; sourceTree = "<group>"; };
+		9CA2E54A20E7B89100AE25C7 /* ZYFBlockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYFBlockViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +114,12 @@
 				9CA2E4F020E77EDA00AE25C7 /* AppDelegate.m */,
 				9CA2E4F220E77EDA00AE25C7 /* ViewController.h */,
 				9CA2E4F320E77EDA00AE25C7 /* ViewController.m */,
+				9CA2E54920E7B89100AE25C7 /* ZYFBlockViewController.h */,
+				9CA2E54A20E7B89100AE25C7 /* ZYFBlockViewController.m */,
+				9CA2E52120E77F1200AE25C7 /* ZYFFeatureViewController.h */,
+				9CA2E52220E77F1200AE25C7 /* ZYFFeatureViewController.m */,
+				9CA2E52420E7800200AE25C7 /* ZYFFeatureCell.h */,
+				9CA2E52520E7800200AE25C7 /* ZYFFeatureCell.m */,
 				9CA2E4F520E77EDA00AE25C7 /* Main.storyboard */,
 				9CA2E4F820E77EDB00AE25C7 /* Assets.xcassets */,
 				9CA2E4FA20E77EDB00AE25C7 /* LaunchScreen.storyboard */,
@@ -194,6 +209,7 @@
 		9CA2E4E420E77EDA00AE25C7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ZYF;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = com.justsee;
 				TargetAttributes = {
@@ -263,7 +279,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CA2E4F420E77EDA00AE25C7 /* ViewController.m in Sources */,
+				9CA2E52320E77F1200AE25C7 /* ZYFFeatureViewController.m in Sources */,
 				9CA2E4FF20E77EDB00AE25C7 /* main.m in Sources */,
+				9CA2E52620E7800200AE25C7 /* ZYFFeatureCell.m in Sources */,
+				9CA2E54B20E7B89100AE25C7 /* ZYFBlockViewController.m in Sources */,
 				9CA2E4F120E77EDA00AE25C7 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
